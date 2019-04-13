@@ -1,11 +1,28 @@
-import React, { Component } from "react";
+import { createBrowserHistory as createHistory } from "history";
+import React from "react";
+import { Redirect, Route, Router, Switch } from "react-router-dom";
 import "./App.css";
-import AppRouter from "./routes/AppRouter";
+import ProductsList from "./components/ProductsList";
+import { NotFoundPage } from "./pages/NotFoundPage";
+import { Page } from "./pages/Page";
 
-class App extends Component {
-  render() {
-    return <AppRouter />;
-  }
-}
+export const history = createHistory();
+
+const App = () => (
+  <Router history={history}>
+    <div>
+      <Switch>
+        <Route
+          exact={true}
+          path="/"
+          render={() => <Redirect to="/products" />}
+        />
+        <Page path="/products" component={ProductsList} />
+        <Page path="/products/:category-id" component={ProductsList} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;
