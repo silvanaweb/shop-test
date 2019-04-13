@@ -2,12 +2,27 @@
   display: flex;
   flex-direction: column;
 }
+.Product__cart {
+  margin: 1rem 0;
+}
+
+.Product__cart span {
+  background-color: var(--teal-ligther);
+  padding: 1rem;
+}
 
 @media (min-width: 45rem) {
   .Product__body {
     flex-direction: row;
   }
+  .Product__image {
+    width: 30%;
+  }
+  .Product__image img {
+    max-width: 100%;
+  }
   .Product__content {
-    margin-left: var(--l-size);
+    margin-left: 5%;
+    width: 65%;
   }
 }

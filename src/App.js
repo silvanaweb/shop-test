@@ -2,6 +2,7 @@ import { createBrowserHistory as createHistory } from "history";
 import React from "react";
 import { Redirect, Route, Router, Switch } from "react-router-dom";
 import "./App.css";
+import Cart from "./components/Cart";
 import Product from "./components/Product/Product";
 import ProductsList from "./components/Products/ProductsList";
 import { NotFoundPage } from "./pages/NotFoundPage";
@@ -20,6 +21,7 @@ const App = () => (
         />
         <Page path="/products/:category?" component={ProductsList} />
         <Page path="/product/:title" component={Product} />
+        <Page path="/cart" component={Cart} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

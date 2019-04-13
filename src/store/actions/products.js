@@ -16,4 +16,10 @@ const startSetProducts = () => {
   };
 };
 
-export { setProducts, startSetProducts };
+const decreaseAmount = (product, qty) => ({
+  type: "DECREASE_AMOUNT",
+  product,
+  qty
+});
+
+export { setProducts, startSetProducts, decreaseAmount };

@@ -12,3 +12,6 @@
 .Product__link:hover .Product__new {
   color: rgb(158, 6, 6);
 }
+.ProductsList__filter {
+  margin: var(--l-size) 0;
+}

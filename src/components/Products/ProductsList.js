@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { setCategory, setTextFilter } from "../../store/actions/filters";
 import selectProducts from "../../store/selectors/products";
 import { ProductListItem } from "./ProductListItem";
+import "./style.css";
 
 const ProductsList = ({
   products,
@@ -23,7 +24,7 @@ const ProductsList = ({
   };
   return (
     <>
-      <div>
+      <div className="ProductsList__filter">
         <DebounceInput
           className="Input"
           placeholder="Filter..."

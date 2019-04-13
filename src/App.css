@@ -1,6 +1,7 @@
 :root {
   --dark-grey: #333333;
   --teal: #008080;
+  --teal-ligther: #afd1d1;
   /* sizes */
   --s-size: 1.2rem;
   --m-size: 1.6rem;
@@ -43,4 +44,29 @@ button:disabled {
 .Input {
   padding: 1rem;
   font-size: 1.6rem;
+}
+
+.Input--number {
+  max-width: 6rem;
+}
+
+.Button {
+  background-color: var(--teal);
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: var(--s-size);
+}
+.Button--neutral {
+  background-color: transparent;
+  border: none;
+}
+
+.Button--link {
+  background-color: transparent;
+  border: none;
+  color: var(--teal);
+  display: inline;
+  font-size: var(--m-size);
+  padding: 0;
 }
