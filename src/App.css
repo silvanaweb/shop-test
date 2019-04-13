@@ -6,6 +6,8 @@
   --m-size: 1.6rem;
   --l-size: 3.2rem;
   --xl-size: 4.8rem;
+  /* media */
+  --desktop-breakpoint: 45rem;
 }
 
 * {
@@ -17,6 +19,7 @@ html {
 }
 
 body {
+  background-color: #f3f3f3;
   color: var(--dark-grey);
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--m-size);
@@ -35,4 +38,9 @@ button:disabled {
   margin: 0 auto;
   padding: 0 var(--m-size);
   max-width: 80rem;
+}
+
+.Input {
+  padding: 1rem;
+  font-size: 1.6rem;
 }

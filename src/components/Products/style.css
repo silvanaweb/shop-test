@@ -1,0 +1,14 @@
+.Product__link {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+.Product__link:hover {
+  color: var(--teal);
+}
+
+.Product__new {
+  color: red;
+}
+.Product__link:hover .Product__new {
+  color: rgb(158, 6, 6);
+}

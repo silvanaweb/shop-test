@@ -8,7 +8,9 @@ const Page = ({ component: Component, ...rest }) => (
     component={props => (
       <div>
         <Header />
-        <Component {...props} />
+        <div className="content-container">
+          <Component {...props} />
+        </div>
       </div>
     )}
   />

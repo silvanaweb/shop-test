@@ -2,7 +2,8 @@ import { createBrowserHistory as createHistory } from "history";
 import React from "react";
 import { Redirect, Route, Router, Switch } from "react-router-dom";
 import "./App.css";
-import ProductsList from "./components/ProductsList";
+import Product from "./components/Product/Product";
+import ProductsList from "./components/Products/ProductsList";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { Page } from "./pages/Page";
 
@@ -17,8 +18,8 @@ const App = () => (
           path="/"
           render={() => <Redirect to="/products" />}
         />
-        <Page path="/products" component={ProductsList} />
-        <Page path="/products/:category-id" component={ProductsList} />
+        <Page path="/products/:category?" component={ProductsList} />
+        <Page path="/product/:title" component={Product} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

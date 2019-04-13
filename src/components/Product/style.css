@@ -1,0 +1,13 @@
+.Product__body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 45rem) {
+  .Product__body {
+    flex-direction: row;
+  }
+  .Product__content {
+    margin-left: var(--l-size);
+  }
+}
