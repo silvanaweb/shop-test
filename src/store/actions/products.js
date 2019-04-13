@@ -21,5 +21,10 @@ const decreaseAmount = (product, qty) => ({
   product,
   qty
 });
+const increaseAmount = (title, qty) => ({
+  type: "INCREASE_AMOUNT",
+  title,
+  qty
+});
 
-export { setProducts, startSetProducts, decreaseAmount };
+export { setProducts, startSetProducts, decreaseAmount, increaseAmount };

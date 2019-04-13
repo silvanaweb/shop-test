@@ -1,4 +1,4 @@
-import { decreaseAmount } from "./products";
+import { decreaseAmount, increaseAmount } from "./products";
 
 const addProductToCart = cartProduct => ({
   type: "ADD_PRODUCT_TO_CART",
@@ -6,7 +6,6 @@ const addProductToCart = cartProduct => ({
 });
 
 const startAddProductToCart = (product, qty) => {
-  console.log("to cart", product, qty);
   return dispatch => {
     dispatch(decreaseAmount(product, qty));
     const cartProduct = {
@@ -19,4 +18,16 @@ const startAddProductToCart = (product, qty) => {
   };
 };
 
-export { addProductToCart, startAddProductToCart };
+const removeProductFromCart = title => ({
+  type: "REMOVE_PRODUCT_FROM_CART",
+  title
+});
+
+const startRemoveProductFromCart = (title, qty) => {
+  return dispatch => {
+    dispatch(increaseAmount(title, qty));
+    dispatch(removeProductFromCart(title));
+  };
+};
+
+export { addProductToCart, startAddProductToCart, startRemoveProductFromCart };

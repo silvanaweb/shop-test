@@ -32,6 +32,6 @@
     align-items: center;
   }
   .Header__link {
-    font-size: 2.5rem;
+    font-size: var(--font-medium);
   }
 }

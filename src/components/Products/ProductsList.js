@@ -19,7 +19,6 @@ const ProductsList = ({
 
   const onChange = e => {
     const text = e.target.value;
-    console.log("onChange settext", text);
     setTextFilter(text);
   };
   return (

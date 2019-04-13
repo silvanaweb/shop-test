@@ -8,7 +8,6 @@ const categories = ["trousers", "jeans", "shorts", "polos", "gifts"];
 
 const Header = ({ cart, history }) => {
   const cartColor = !!cart.length ? "#008080" : "#afd1d1";
-  const cartDisabled = !!cart.length ? false : true;
 
   const onGoToCart = () => {
     history.push("/cart");
@@ -19,6 +18,14 @@ const Header = ({ cart, history }) => {
       <div className="content-container">
         <div className="Header__content">
           <div className="Header__left">
+            <NavLink
+              strict={true}
+              exact={true}
+              to={`/products`}
+              className="Header__link"
+            >
+              All
+            </NavLink>
             {categories.map(cat => (
               <NavLink
                 key={cat}
@@ -30,11 +37,7 @@ const Header = ({ cart, history }) => {
             ))}
           </div>
           <div className="Header__right">
-            <button
-              disabled={cartDisabled}
-              className="Button--neutral "
-              onClick={onGoToCart}
-            >
+            <button className="Button--neutral " onClick={onGoToCart}>
               <CartIcon style={{ height: "4rem" }} color={cartColor} />
             </button>
           </div>

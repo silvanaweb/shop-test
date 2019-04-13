@@ -2,6 +2,9 @@
   --dark-grey: #333333;
   --teal: #008080;
   --teal-ligther: #afd1d1;
+  /* font */
+  --font-normal: 1.6rem;
+  --font-medium: 2.5rem;
   /* sizes */
   --s-size: 1.2rem;
   --m-size: 1.6rem;
@@ -23,7 +26,7 @@ body {
   background-color: #f3f3f3;
   color: var(--dark-grey);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: var(--m-size);
+  font-size: var(--font-normal);
   line-height: 1.6;
 }
 
