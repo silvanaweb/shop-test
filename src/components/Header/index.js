@@ -37,7 +37,11 @@ const Header = ({ cart, history }) => {
             ))}
           </div>
           <div className="Header__right">
-            <button className="Button--neutral " onClick={onGoToCart}>
+            <button
+              data-test="CartButton"
+              className="Button--neutral"
+              onClick={onGoToCart}
+            >
               <CartIcon style={{ height: "4rem" }} color={cartColor} />
             </button>
           </div>
@@ -53,6 +57,6 @@ const mapStateToProps = (state, props) => {
   };
 };
 
-export { Header };
+export { Header, categories };
 
 export default connect(mapStateToProps)(Header);

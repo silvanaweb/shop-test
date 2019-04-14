@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header with cart correctly 1`] = `
+<header
+  className="Header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="Header__content"
+    >
+      <div
+        className="Header__left"
+      >
+        <NavLink
+          className="Header__link"
+          exact={true}
+          strict={true}
+          to="/products"
+        >
+          All
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="trousers"
+          to="/products/trousers"
+        >
+          trousers
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="jeans"
+          to="/products/jeans"
+        >
+          jeans
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="shorts"
+          to="/products/shorts"
+        >
+          shorts
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="polos"
+          to="/products/polos"
+        >
+          polos
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="gifts"
+          to="/products/gifts"
+        >
+          gifts
+        </NavLink>
+      </div>
+      <div
+        className="Header__right"
+      >
+        <button
+          className="Button--neutral"
+          data-test="CartButton"
+          onClick={[Function]}
+        >
+          <CartIcon
+            color="#008080"
+            style={
+              Object {
+                "height": "4rem",
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`should render Header with no cart correctly 1`] = `
+<header
+  className="Header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="Header__content"
+    >
+      <div
+        className="Header__left"
+      >
+        <NavLink
+          className="Header__link"
+          exact={true}
+          strict={true}
+          to="/products"
+        >
+          All
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="trousers"
+          to="/products/trousers"
+        >
+          trousers
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="jeans"
+          to="/products/jeans"
+        >
+          jeans
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="shorts"
+          to="/products/shorts"
+        >
+          shorts
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="polos"
+          to="/products/polos"
+        >
+          polos
+        </NavLink>
+        <NavLink
+          className="Header__link"
+          key="gifts"
+          to="/products/gifts"
+        >
+          gifts
+        </NavLink>
+      </div>
+      <div
+        className="Header__right"
+      >
+        <button
+          className="Button--neutral"
+          data-test="CartButton"
+          onClick={[Function]}
+        >
+          <CartIcon
+            color="#afd1d1"
+            style={
+              Object {
+                "height": "4rem",
+              }
+            }
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+`;

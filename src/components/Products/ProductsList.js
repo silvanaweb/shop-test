@@ -10,6 +10,7 @@ const ProductsList = ({
   products,
   setCategory,
   setTextFilter,
+  textFilter,
   match: { params }
 }) => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const ProductsList = ({
     <>
       <div className="ProductsList__filter">
         <DebounceInput
+          value={textFilter}
           className="Input"
           placeholder="Filter..."
           minLength={1}
@@ -45,7 +47,8 @@ export { ProductsList };
 
 const mapStateToProps = (state, props) => {
   return {
-    products: selectProducts(state.products, state.filters)
+    products: selectProducts(state.products, state.filters),
+    textFilter: state.filters.text
   };
 };
 
