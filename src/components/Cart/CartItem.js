@@ -8,7 +8,7 @@ export const CartItem = ({ image, title, price, qty, onDelete }) => {
   };
   return (
     <div className="CartItem">
-      <img src={image} alt={title} />
+      <img src="https://picsum.photos/200/300" alt={title} />
       <span>{title}</span>
       <span>
         {qty} piece{plural(qty)}

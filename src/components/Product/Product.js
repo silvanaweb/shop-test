@@ -27,7 +27,7 @@ const Product = ({
       <h2>{title}</h2>
       <div className="Product__body">
         <div className="Product__image">
-          <img src={image} alt={title} />
+          <img src="https://picsum.photos/200/300" alt={title} />
         </div>
         <div className="Product__content">
           <p>£{price}</p>
